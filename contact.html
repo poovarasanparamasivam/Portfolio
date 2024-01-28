@@ -5,6 +5,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/contact.css">
+        <link rel="stylesheet" type="text/css" href="css/error.css">
+
     </head>
     <body>
         <div class="main">
@@ -23,6 +26,23 @@
                     <input class="srch" type="search" placeholder="Type To Search">
                     <button class="btn"><a href="#">search</a></button>
                 </div>
+            </div>
+            <div class="form">
+                <h2>CONTACT US</h2>
+                <label for="firstname">firstname</label>
+                <input id="fname" type="text" name="firstname" ><span class="error-message" id="fnameerror"></span>
+                <label for="lastname">lastname</label>
+                <input id="lname" type="text" name="lastname" ><span class="error-message" id="lnameerror"></span>
+                <label for="email">email</label>
+                <input id="mail" type="email" name="email" ><span class="error-message" id="mailerror"></span>
+                <label for="mobilnumber">mobilenumber</label>
+                <input id="mobilnumber" type="tel" name="mobilenumber" ><span class="error-message" id="mobilenumbererror"></span>
+                <label for="address">address</label>
+                <input id="address" type= "textarea" name="address" ><span class="error-message" id="addresserror"></span>
+                <label for="summary">summary</label>
+                <input id="summary" type="textarea" name="summary" ><span class="error-message" id="summaryerror"></span>
+                <button class="btn"><a href="#">login</a></button>
+                
             </div>
             
         </div>
