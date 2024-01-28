@@ -7,6 +7,7 @@
         <link href="css/style.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/contact.css">
         <link rel="stylesheet" type="text/css" href="css/error.css">
+        <script src="js/contact.js"></script>
 
     </head>
     <body>
@@ -29,19 +30,34 @@
             </div>
             <div class="form">
                 <h2>CONTACT US</h2>
-                <label for="firstname">firstname</label>
-                <input id="fname" type="text" name="firstname" ><span class="error-message" id="fnameerror"></span><br>
-                <label for="lastname">lastname</label>
-                <input id="lname" type="text" name="lastname" ><span class="error-message" id="lnameerror"></span><br>
-                <label for="email">email</label>
-                <input id="mail" type="email" name="email" ><span class="error-message" id="mailerror"></span><br>
-                <label for="mobilnumber">mobilenumber</label>
-                <input id="mobilnumber" type="tel" name="mobilenumber" ><span class="error-message" id="mobilenumbererror"></span><br>
-                <label for="address">address</label>
-                <input id="address" type= "textarea" name="address" ><span class="error-message" id="addresserror"></span><br>
-                <label for="summary">summary</label>
-                <input id="summary" type="textarea" name="summary" ><span class="error-message" id="summaryerror"></span><br>
-                <button class="btnn"><a href="#">login</a></button>
+                <table>
+                    <tr>
+                        <td><label for="firstname">FIRSTNAME : </label></td>
+                        <td><input id="fname" type="text" name="firstname" ><span class="error-message" id="fnameerror"></span></td>
+                    </tr>
+                    <tr>
+                        <td><label for="lastname">LASTNAME : </label></td>
+                        <td><input id="lname" type="text" name="lastname" ><span class="error-message" id="lnameerror"></span></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">EMAIL : </label></td>
+                        <td><input id="mail" type="email" name="email" ><span class="error-message" id="mailerror"></span></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mobilnumber">MOBILE : </label></td>
+                        <td><input id="mobilnumber" type="tel" name="mobilenumber" ><span class="error-message" id="mobilenumbererror"></span></td>
+                    </tr>
+                    <tr>
+                        <td><label for="address">ADDRESS : </label></td>
+                        <td><textarea id="address" name="address" rows="4" cols="4"></textarea><span class="error-message" id="addresserror"></span></td>
+                    </tr>
+                    <tr>
+                        <td><label for="summary">SUMMARY : </label></td>
+                        <td><textarea id="summary" name="summary" rows="4" cols="4"></textarea><span class="error-message" id="summaryerror"></span></td>
+                    </tr>
+                </table>
+                
+                <button class="btnn" type="button" onclick="submit()">Submit</button>
                 
             </div>
             
